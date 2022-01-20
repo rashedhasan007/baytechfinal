@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--Title-->
+  <title>Project Of Rashed Vai</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+  <!-- font awesome file link  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+<!-- header section starts  -->
+
+<header class="header">
+
+  <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="{% url 'index' %}">home</a></li>
+      <li><a href="{% url 'abouthistory' %}">about us +</a>
+        <ul>
+          <li><a href="{% url 'abouthistory' %}">Our History</a></li>
+          <li><a href="{% url 'abouthistory' %}">People</a></li>
+          <li><a href="{% url 'abouthistory' %}">Contracting Vehicles</a></li>
+          <li><a href="{% url 'abouthistory' %}">Current Openings</a></li>
+        </ul>
+      </li>
+      <li><a href="{% url 'service' %}#Industrial{{section}}">services +</a>
+        <ul>
+          <li><a href="{% url 'service' %}#Industrial{{section}}">Industrial Facility Engineering</a></li>
+          <li><a href="{% url 'service' %}#Construction{{section}}">Construction Management</a></li>
+          <li><a href="{% url 'service' %}#Naval{{section}}">Naval Architecture & Marine Engineering</a></li>
+          <li><a href="{% url 'service' %}#Vessel{{section}}">Vessel Design & Refurbishment</a></li>
+          <li><a href="{% url 'service' %}#Waterfront{{section}}">Waterfront Structures</a></li>
+          <li><a href="{% url 'service' %}#Floating{{section}">Floating Structures</a></li>
+        </ul>
+      </li>
+      <li><a href="{% url 'project' %}">projects +</a>
+        <ul>
+          <li><a href="{% url 'project' %}#Industrial{{section}}">Facilities Engineering</a></li>
+          <li><a href="{% url 'project' %}#Construction{{section}}">Naval Architecture & Marine Engineering</a></li>
+        </ul>
+      </li>
+      <li><a href="{% url 'blog' %}">Blogs +</a>
+      </li>
+      <li><a href="{% url 'abouthistory' %}#Contracting{{section}}">contact and career</a>
+           <ul>
+          <li><a href="{% url 'abouthistory' %}#Contracting{{section}}">Contact info</a></li>
+          <li><a href="{% url 'abouthistory' %}#Current{{section}}">Career</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+  </div>
+
+  <form action="" class="search-form">
+      <input type="search" name="" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+  </form>
+
+</header>
+
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+  <h1 id="banner"  class="banner">upload </h1>
+<h3 id="slogan" class="slogan">upload</h3>
+<a href="#"><button>get started</button></a>
+</section>
+
+
+<!-- home section ends -->
+
+
+<!-- PROJECTS section starts  -->
+
+<section class="about">
+
+<h1 class="heading">PROJECTS</h1>
+
+<div class="row">
+
+  <div class="content">
+    <h3>We build websites that build your busines</h3>
+    <p id="project"></p>
+    <a href="{% url 'project' %}"><button class="btn">read more <i class="fas fa-chevron-right"></i></button></a>
+  </div>
+
+  <div class="image">
+    <img src="images/pexels-mikael-blomkvist-6476254.jpg" alt="">
+  </div>
+
+</div>
+
+
+</section>
+
+<!-- PROJECTS section ends  -->
+
+<!-- About section starts  -->
+
+<section id="service" class="service">
+
+<h1 class="heading">ABOUT US</h1>
+
+<div class="row">
+
+  <div class="image">
+    <img src="images/pexels-fauxels-3184398.jpg" alt="">
+  </div>
+  <div class="content">
+    <h3>Who We Are</h3>
+    <p id="aboutus"></p>
+    <a href="{% url 'abouthistory' %}"><button class="btn">read more <i class="fas fa-chevron-right"></i></button></a>
+  </div>
+
+</div>
+
+</section>
+
+<!-- About section ends -->
+
+<!-- Contact section Start -->
+
+<section class="contact">
+
+  <h1 class="heading">contact us</h1>
+
+
+  <div class="row">
+
+    <div class="content">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29075.63969157371!2d88.6155302!3d24.36547165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1639581427219!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="form-container">
+      <form action="">
+
+        <div class="inputBox">
+          <input type="text" placeholder="first name">
+          <input type="text" placeholder="last name">
+        </div>
+
+        <input type="email" placeholder="email">
+        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+        <input type="submit" value="send">
+
+      </form>
+    </div>
+
+  </div>
+
+  </section>
+
+  <!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html">home</a>
+          <a href="#about">about</a>
+          <a href="service.html">services</a>
+          <a href="#projects">projects</a>
+          <a href="#news">news</a>
+          <a href="#contact">contact</a>
+      </div>
+
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#">ask questions</a>
+          <a href="#">terms of use</a>
+          <a href="#">privacy policy</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <a id="address" href="#"> <i class="fas fa-laptop-house"></i></a>
+          <a id="phone" href="#">  <i class="fas fa-phone"></i></a>
+          <a id="email" href="#"> <i class="fas fa-envelope"></i> sakieshahriar@gmail.com </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Google Map </a>
+      </div>
+
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+          <a href="#"> <i class="fab fa-github"></i> github </a>
+      </div>
+
+  </div>
+
+  <div class="copyright">copyright by <span><a href="https://www.facebook.com/MrJoarder/" target="_blank" rel="noopener noreferrer">MrJoarder</a></span> | all rights reserved!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- jquery file link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- custom js file link  -->
+<script>
+
+firebase.database().ref('slogan').on('value',(snap)=>{
+    console.log(snap.key);
+  });
+let searchForm = document.querySelector('.header .search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.header .navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+const backToTopButton = document.querySelector("#back-to-top-btn");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (window.pageYOffset > 300) { // Show backToTopButton
+    if(!backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnExit");
+      backToTopButton.classList.add("btnEntrance");
+      backToTopButton.style.display = "block";
+    }
+  }
+  else { // Hide backToTopButton
+    if(backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnEntrance");
+      backToTopButton.classList.add("btnExit");
+      setTimeout(function() {
+        backToTopButton.style.display = "none";
+      }, 250);
+    }
+  }
+}
+
+backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+// function backToTop() {
+//   window.scrollTo(0, 0);
+// }
+
+function smoothScrollBackToTop() {
+  const targetPosition = 0;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  const duration = 750;
+  let start = null;
+
+  window.requestAnimationFrame(step);
+
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    if (progress < duration) window.requestAnimationFrame(step);
+  }
+}
+
+function easeInOutCubic(t, b, c, d) {
+	t /= d/2;
+	if (t < 1) return c/2*t*t*t + b;
+	t -= 2;
+	return c/2*(t*t*t + 2) + b;
+};
+
+</script>
+<script src="main.js"></script>
+
+
+</body>
+</html>

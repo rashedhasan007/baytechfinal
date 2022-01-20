@@ -1,0 +1,353 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <!--Title-->
+  <title>Baytechship</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+  <!-- font awesome file link  -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="main.js"></script>
+    <script src="services1.js"></script>
+</head>
+<body>
+  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+<!-- header section starts  -->
+
+<header class="header service-page-header">
+
+  <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="#about">about us +</a>
+        <ul>
+          <li><a href="">Our History</a></li>
+          <li><a href="">People</a></li>
+          <li><a href="">Contracting Vehicles</a></li>
+          <li><a href="">Current Openings</a></li>
+        </ul>
+      </li>
+      <li><a href="service.html">services +</a>
+        <ul class="service-smooth-scroll">
+          <li><a href="#Industrial">Industrial Facility Engineering</a></li>
+          <li><a href="#Construction">Construction Management</a></li>
+          <li><a href="#Naval">Naval Architecture & Marine Engineering</a></li>
+          <li><a href="#Vessel">Vessel Design & Refurbishment</a></li>
+          <li><a href="#Waterfront">Waterfront Structures</a></li>
+          <li><a href="#Floating">Floating Structures</a></li>
+        </ul>
+      </li>
+      <li><a href="project.html">projects +</a>
+        <ul class="service-smooth-scroll">
+          <li><a href="#Industrial">Industrial Facility Engineering</a></li>
+          <li><a href="#Construction">Naval Architecture & Marine Engineering</a></li>
+        </ul>
+      </li>
+      <li><a href="#news">news +</a>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="">Press Release</a></li>
+          <li><a href="">Art Anderson in the News</a></li>
+        </ul>
+      </li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+  </div>
+
+  <form action="" class="search-form">
+      <input type="search" name="" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+  </form>
+
+</header>
+
+
+<!-- header section ends -->
+
+<!--Service-page Home-->
+<section>
+    <div class="A1">
+        <div class="A1D">
+            <h1>Our services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore .</p>
+        </div>
+        <div class="N1D1">
+        </div>
+    </div>
+</section>
+
+<!--Service-page Links-->
+
+<section>
+    <div class="service-page ">
+        <span>
+            <a href="#Industrial">Industrial Facility Engineering</a> |
+            <a href="#Construction">Construction Management</a> |
+            <a href="#Naval">Naval Architecture & Marine Engineering</a> |
+            <a href="#Vessel">Vessel Design & Refurbishment</a> |
+            <a href="#Waterfront">Waterfront Structures</a> |
+            <a href="#Floating">Floating Structures</a>
+        </span>
+    </div>
+</section>
+
+<!--Service-page-content Links-->
+
+<section>
+    <div class="service-page-content">
+       <span>
+        Art Anderson  is a Veteran Owned Small Business with over sixty years of experience providing Value Beyond Engineering. A multi-discipline engineering services firm, the company has a broad range of expertise and experience that lends itself to unique engineering and design challenges. We focus on developing client relationships for the long term so your projects always receive our highest level of attention. From project pre-planning all the way through construction, from ships at sea to buildings on shore and everywhere in-between, Art Anderson has the ability to exceed your expectations of what a small business firm can provide.
+       </span>
+      </div>
+</section>
+    
+    <!-- Industrial section starts  -->
+    
+    <section id="Industrial" class="service box-color">
+    
+    <h1 id="header1" class="heading service-page-heading">Industrial</h1>
+    
+    <div class="row">
+    
+      <div class="image">
+        <img id="service-photo1" src="images/2014-02-27-MAB-1-Revit-Model-Checks-055-Edit.jpg" alt="">
+      </div>
+      <div class="content">
+        <h3 id="longheader1">Industrial Facility Engineering</h3>
+        <p id="paragraph1">With a 30 year history supporting US military installations, we understand the needs of industrial mechanical and electrical engineering design. At Art Anderson, we deliver engineering and design solutions tailored for renovation, modernization, repair and new construction of industrial commercial and military facilities utilizing traditional, design-build and design-bid-build project delivery methods.</p>
+
+           <p>To learn more<a href="" id="link1">click here</a></p>
+      </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- Industrial section ends -->
+
+    <!-- Construction section starts  -->
+    
+    <section id="Construction" class="about">
+    
+        <h1 id="header2" class="heading service-page-heading">Construction</h1>
+        
+        <div class="row">
+
+            <div class="content">
+                <h3 id="longheader2">Construction Management</h3>
+                <p id="paragraph2"></p>
+        
+                   <p>To learn more about our Construction Management services, <a href=""id="link2">click here</a></p>
+              </div>
+        
+          <div class="image">
+            <img id="service-photo2" src="" alt="">
+          </div>
+        </div>
+        
+        </section>
+        
+        <!-- Construction section ends -->
+
+        <!--Naval section starts  -->
+    
+    <section id="Naval" class="service box-color">
+    
+        <h1 id="header3" class="heading service-page-heading">Naval Architecture</h1>
+        
+        <div class="row">
+        
+          <div class="image">
+            <img id="service-photo3" src="images/NOAA-Ron-Brown-and-MObile-X-Band-Radar-Platform2-JAW.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3 id="longheader3">Naval Architecture & Marine Engineering</h3>
+            <p id="paragraph3">Our broad range of naval architecture and marine engineering services means we can support your vessel from concept to sea-trial. With over 60 years of experience helping operators design and refurbish vessels, we have become leaders in understanding regulatory requirements, hull form analysis and design, trim and stability, service life extensions and meeting client needs. Art Anderson extends this knowledge beyond traditional ships and boats to provide naval architecture and marine engineering services for fuel floats, barges, ferry terminals, dry dock caissons, floating bridges and floating breakwaters. </p>
+    
+               <p>For more information on our Naval Architecture and Marine Engineering capabilities, <a href="" id="link3">click here</a></p>
+          </div>
+        
+        </div>
+        
+        </section>
+        
+        <!-- Naval section ends -->
+    
+        <!-- Vessel section starts  -->
+        
+        <section id="Vessel" class="about ">
+        
+            <h1 id="header4" class="heading service-page-heading">Vessel Design</h1>
+            
+            <div class="row ">
+    
+                <div class="content">
+                    <h3 id="longheader4">Vessel Design & Refurbishment</h3>
+                    <p id="paragraph4">As industry leaders in marine structural analysis, Art Anderson designs workboats, ferries, military crafts and barges. But when the life of a ship is measured in decades, success in a vessel program comes in maintaining a vessel’s mission effectiveness throughout its service life.</p>
+                    <p>Our naval architecture/marine engineering practice emphasizes working within an existing ship envelope to deliver clients superior value throughout the life cycle of their vessel investment. Engine replacement and re-powering, space modifications, HVAC and mechanical systems upgrades and electronic and computer system installations are just some of the types of vessel renovation projects we like to take on.</p>
+            
+                       <p>To learn more about our Vessel Design & Refurbishment services, <a href="" id="link4">click here</a></p>
+                  </div>
+            
+              <div class="image">
+                <img id="service-photo4" src="images/Pump-Room-1_Uncropped.png" alt="">
+              </div>
+            </div>
+            
+            </section>
+            
+            <!-- Vessel section ends -->
+            <!-- Waterfront section starts  -->
+
+            <!-- Floating section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="#about">about</a>
+            <a href="service.html">services</a>
+            <a href="#packages">projects</a>
+            <a href="#reviews">news</a>
+            <a href="#blogs">contact</a>
+        </div>
+  
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">ask questions</a>
+            <a href="#">terms of use</a>
+            <a href="#">privacy policy</a>
+        </div>
+  
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-laptop-house"></i> 10/3, Nowdapara, Sapura, Shah-Mukhdum, Rajshahi </a>
+            <a href="#">  <i class="fas fa-phone"></i> +8801710357847 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> sakieshahriar@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Google Map </a>
+        </div>
+  
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-github"></i> github </a>
+        </div>
+  
+    </div>
+  
+    <div class="copyright">copyright by <span><a href="https://www.facebook.com/MrJoarder/" target="_blank" rel="noopener noreferrer">MrJoarder</a></span> | all rights reserved!</div>
+  
+  </section>
+  
+  <!-- footer section ends -->
+  
+  
+  <!-- jquery file link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  
+  <!-- custom js file link  -->
+  <script>
+  
+  let searchForm = document.querySelector('.header .search-form');
+  
+  document.querySelector('#search-btn').onclick = () =>{
+      searchForm.classList.toggle('active');
+      navbar.classList.remove('active');
+  }
+  
+  let navbar = document.querySelector('.header .navbar');
+  
+  document.querySelector('#menu-btn').onclick = () =>{
+      navbar.classList.toggle('active');
+      searchForm.classList.remove('active');
+  }
+  
+  window.onscroll = () =>{
+      searchForm.classList.remove('active');
+      navbar.classList.remove('active');
+  }
+  const backToTopButton = document.querySelector("#back-to-top-btn");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (window.pageYOffset > 300) { // Show backToTopButton
+    if(!backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnExit");
+      backToTopButton.classList.add("btnEntrance");
+      backToTopButton.style.display = "block";
+    }
+  }
+  else { // Hide backToTopButton
+    if(backToTopButton.classList.contains("btnEntrance")) {
+      backToTopButton.classList.remove("btnEntrance");
+      backToTopButton.classList.add("btnExit");
+      setTimeout(function() {
+        backToTopButton.style.display = "none";
+      }, 250);
+    }
+  }
+}
+
+backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+// function backToTop() {
+//   window.scrollTo(0, 0);
+// }
+
+function smoothScrollBackToTop() {
+  const targetPosition = 0;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  const duration = 750;
+  let start = null;
+  
+  window.requestAnimationFrame(step);
+
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    if (progress < duration) window.requestAnimationFrame(step);
+  }
+}
+
+function easeInOutCubic(t, b, c, d) {
+	t /= d/2;
+	if (t < 1) return c/2*t*t*t + b;
+	t -= 2;
+	return c/2*(t*t*t + 2) + b;
+};
+  </script>
+  <script src="main.js"></script>
+  
+    
+  </body>
+  </html>
